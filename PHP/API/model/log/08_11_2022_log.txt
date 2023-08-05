@@ -1,0 +1,10 @@
+msgmsgmsgmsgmsgmsg
+msg
+
+msg
+
+Error DateTime =>> 08-11-2022 07:14:03 AM
+Error Msg =>> php_network_getaddresses: getaddrinfo for localhost1 failed: No such host is known. 
+
+Error DateTime =>> 08-11-2022 11:45:06 AM
+Error Msg =>> php_network_getaddresses: getaddrinfo for localhost1 failed: No such host is known. 
