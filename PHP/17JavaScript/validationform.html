@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <input type="text"  class="req" onblur="checkrequire(this,'errorUname')" name="username" id="username" required><span id="errorUname"></span> <BR>
+        <input type="text" class="req" name="password" onblur="checkrequire(this,'errorPass')" id="password"> <span id="errorPass"></span> </BR>
+        <input type="text" class="req" name="email" onblur="checkrequire(this,'errorEmail')" id="email"><span id="errorEmail"></span>  <BR/>
+        <button type="submit">Click</button>
+    </form>
+<SCRipt>
+// function btnclick(kaipan) {
+//     let inpByClass=document.getElementsByClassName('req')
+//     console.log(inpByClass);
+//     for (let index = 0; index < inpByClass.length; index++) {
+//         const element = inpByClass[index];
+//         console.log(element);
+//     }
+// }
+function checkrequire(kaipan,spnid) {
+    // let uname = document.getElementById("username")
+    // let uname = document.getElementsByClassName
+    // let uname = document.getElementsByName
+    // let uname = document.getElementsByTagName
+    // let uname = document.querySelector
+    // let uname = document.querySelectorAll("#id")
+    // let uname = document.querySelectorAll(".class")
+    // console.log(uname);
+    // console.log(uname.value);
+    if (kaipan.value == "") {
+        console.log("called required");
+        document.getElementById(spnid).innerHTML = "<b>This field is required</b>"
+        // document.getElementById("errorUname").innerText = "<b>This field is required</b>"
+    } else {
+        console.log("Done");
+        document.getElementById(spnid).innerHTML = ""
+        // document.getElementById("errorUname").innerHTML = ""
+    }
+}
+</SCRipt>
+</body>
+</html>
